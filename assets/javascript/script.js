@@ -239,12 +239,13 @@ $(document).ready(function () {
         }
 
         function result() {
+           
             $('.conthree').toggle()
             $('.contwo').hide()
             $('.correcto').text('Correct Answers: ' + correct)
             $('.incorrecto').text('Incorrect Answers: ' + incorrect)
             $('.start').attr('disabled', true)
-            timeleft = 0;
+            
             
             
            
