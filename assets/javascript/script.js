@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('.contwo').hide()
     $('.conthree').hide()
-    $('#buttons').fadeOut(1000).fadeIn(1000).fadeOut(500).fadeIn(1000)
+    $('#buttons').fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(1000)
 
  
 
