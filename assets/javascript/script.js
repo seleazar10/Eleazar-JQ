@@ -9,7 +9,8 @@ $(document).ready(function () {
     $(".start").on("click", function () {
         start();
         $('.contwo').toggle(1000)
-        $('.start').attr('disabled', true).fadeOut()
+        $('.start').attr('disabled', true)
+        $('.direct').hide()
 
 
     });
@@ -59,7 +60,7 @@ $(document).ready(function () {
 
 
 
-                    $(".countdown").text("Finished!!")
+                   
                     result()
 
                     
@@ -242,13 +243,13 @@ $(document).ready(function () {
            
             $('.conthree').toggle()
             $('.contwo').hide()
+            $(".countdown").hide();
+            $(".time").text('Finished');
             $('.correcto').text('Correct Answers: ' + correct)
             $('.incorrecto').text('Incorrect Answers: ' + incorrect)
-            $('.start').attr('disabled', true)
             
             
-            
-           
+               
            
         }
 
