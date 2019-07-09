@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
-    $(".start").on("click", start);
+    $('.contwo').hide()
+    $('.conthree').hide()
+    $('#buttons').fadeOut().fadeIn(3000)
+   
+
+
+    $(".start").on("click", function(){
+        start();
+        $('.contwo').toggle(1000)
+        
+
+    });
 
 
     var timeRunning = false;
@@ -16,6 +27,8 @@ $(document).ready(function(){
 
     function start() {
 
+        
+
         if (!timeRunning) {
             
             clockRunning = true;
@@ -30,6 +43,8 @@ $(document).ready(function(){
      timeleft--;
 
      
+
+     
      
 
     if(timeleft <= 0){
@@ -38,7 +53,8 @@ $(document).ready(function(){
  
 
     $(".countdown").text("Finished!!")
-    result()
+    $('.conthree').toggle()
+    $('.contwo').toggle()
 
 
     }
@@ -161,10 +177,11 @@ $(document).ready(function(){
          ///Q7
 
          $('.btnff').on('click',function(){
-            result()
+          
 
             correct++
             console.log(correct)
+            result()
 
                
 
@@ -172,9 +189,10 @@ $(document).ready(function(){
         })
         $('.btff').on('click',function(){
 
-            result()
+            
             incorrect++
-            console.log(incorrect)       
+            console.log(incorrect) 
+            result()      
             
 
         })
@@ -185,6 +203,8 @@ $(document).ready(function(){
     }
 
     function result(){
+        $('.conthree').toggle()
+            $('.contwo').hide()
         $('.correcto').text('Correct Answers: ' + correct)
         $('.incorrecto').text('Incorrect Answers: ' + incorrect)
     }
