@@ -24,7 +24,7 @@ body{
 }
 
 .toppart{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.767)), url('/assets/images/panther.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.767)), url("/assets/images/panther.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     font-weight: bolder;
