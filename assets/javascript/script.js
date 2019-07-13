@@ -51,7 +51,7 @@ $(document).ready(function () {
 
 
 
-                if (timeleft <= 0) {
+                if (timeleft < 0) {
 
                     
 
@@ -243,10 +243,13 @@ $(document).ready(function () {
            
             $('.conthree').toggle()
             $('.contwo').hide()
-            $(".countdown").hide();
+            // $(".countdown").hide();
+            $('.direction').hide()
+
             $(".time").text('Finished');
             $('.correcto').text('Correct Answers: ' + correct)
             $('.incorrecto').text('Incorrect Answers: ' + incorrect)
+            clearInterval(startTimer)
             
             
                

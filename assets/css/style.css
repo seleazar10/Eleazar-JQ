@@ -6,9 +6,18 @@ body{
     font-family: 'Notable', sans-serif;
 }
 
+.monto{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+}
+
 .sectiono{
   
     background: linear-gradient(rgba(0, 0, 0, 0.966), rgba(0, 0, 0, 0.966));
   
 
+}
+
+.btnol{
+    font-size: 40px;
 }
