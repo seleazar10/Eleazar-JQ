@@ -25,7 +25,6 @@ $(document).ready(function () {
 
 
 
-
     function start() {
 
         
@@ -56,11 +55,7 @@ $(document).ready(function () {
                     
 
                     clearInterval(startTimer);
-                    
-
-
-
-                   
+                
                     result()
 
                     
@@ -80,7 +75,7 @@ $(document).ready(function () {
 
         }
 
-        /////////////////////////ways to CRY
+        /////////////////////////better ways to CRY
 
         
 
