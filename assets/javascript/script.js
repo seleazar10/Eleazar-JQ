@@ -2,9 +2,9 @@ $(document).ready(function () {
 
     $('.contwo').hide()
     $('.conthree').hide()
-    $('#buttons').fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(1000)
+    $('#buttons').fadeOut(200).fadeIn(500).fadeOut(500).fadeIn(1000)
 
- 
+
 
     $(".start").on("click", function () {
         start();
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     function start() {
 
-        
+
 
 
 
@@ -47,24 +47,15 @@ $(document).ready(function () {
 
 
 
-
-
-
                 if (timeleft < 0) {
 
-                    
+
 
                     clearInterval(startTimer);
-                
+
                     result()
 
-                    
-
-
                 }
-
-
-               
 
             }, 1000);
 
@@ -77,7 +68,7 @@ $(document).ready(function () {
 
         /////////////////////////better ways to CRY
 
-        
+
 
         function qone() {
 
@@ -213,9 +204,6 @@ $(document).ready(function () {
                 $('.seven').attr('disabled', true)
 
 
-
-
-
             })
             $('.btff').on('click', function () {
 
@@ -225,37 +213,22 @@ $(document).ready(function () {
                 result()
                 $('.seven').attr('disabled', true)
 
-
-
             })
-
-
 
 
         }
 
         function result() {
-           
+
             $('.conthree').toggle()
             $('.contwo').hide()
-            // $(".countdown").hide();
             $('.direction').hide()
-
             $(".time").text('Finished');
             $('.correcto').text('Correct Answers: ' + correct)
             $('.incorrecto').text('Incorrect Answers: ' + incorrect)
             clearInterval(startTimer)
-            
-            
-               
-           
+
         }
-
-         
-        
-
-        
-
 
     }
 
